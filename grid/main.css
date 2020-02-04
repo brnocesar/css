@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #c7dbbd;
+    background: white
 }
 
 .container {
@@ -22,7 +22,7 @@ header {
     align-items: center;
 }
 header > div{
-    background: rgb(245, 172, 172);
+    background: #c7dbbd;
     width: 100px;
     height: 100px;
 }
@@ -39,7 +39,7 @@ main {
 }
 
 main > div{
-    background: rgb(245, 172, 172);
+    background: rgb(173, 143, 44);
     width: 100px;
     height: 100px;
 }

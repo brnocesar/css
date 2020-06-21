@@ -1,9 +1,8 @@
 # Grid
 Com este sistema de layout podemos manipular a página de forma **bidimensional**, dividindo-a em linhas e colunas.
 
-Suas propriedades são separadas em dois grupos: as dos `contêineres` e dos `itens`.
+Suas propriedades são separadas em dois grupos: as dos `contêineres` e dos `itens`:
 
-#### Container
 ```css
 .container {
     display: grid;
@@ -14,7 +13,6 @@ Suas propriedades são separadas em dois grupos: as dos `contêineres` e dos `it
 }
 ```
 
-#### Item
 ```css
 .item {
     display: grid;
@@ -25,43 +23,26 @@ Suas propriedades são separadas em dois grupos: as dos `contêineres` e dos `it
 ```
 
 ## Propriedades de alinhamento
-Podem ser utilizados tanto nos `contêineres` como nos `itens`, e são as seguintes:
+
+Podem ser utilizados tanto nos `contêineres` como nos `itens`.
 
 ```css
 .alinhamento {
-    justify-content: ;
+    justify-content: start|end|center|stretch|space-between|space-around|space-evenly;
     align-content: ;
-    justify-items: ;
+    justify-items: start|end|center|stretch;
     align-items: ;
-    justify-self: ;
+    justify-self: start|end|center|stretch;
     align-self: ;
 }
 ```
-### `justify` e `align`
-Estas propriedades dizem respeito aos eixos x e y, respectivamente.
-- `justify`: é o posicionamento horizontal, da esquerda para direita;
-- `align`: representa o posicionamento vertical, de cima para baixo.
 
-#### `content`
-Permite alinhar o próprio grid no espaço que lhe é destinado. As propriedades `justify-content` e `align-content` aceitam sete valores:
-- `start`:
-- `end`:
-- `center`:
-- `stretch`:
-- `space-between`:
-- `space-around`:
-- `space-evenly`:
+- o primeiro termo diz respeito aos eixos x e y, respectivamente.
+  - `justify`: é o posicionamento horizontal, da esquerda para direita;
+  - `align`: representa o posicionamento vertical, de cima para baixo.
+- o segundo termo indica que elemento(s) será afetado
+  - `content`: permite alinhar o próprio grid no espaço que lhe é destinado
+  - `items`: permite alinhar os `items` do grid no espaço disponível na célula que ele estiver
+  - `self`: possui o mesmo comportamento de `items`, mas o estilo é aplicado no próprio elemento e não no container
 
-#### `items`
-Permite alinhar os `items` do grid no espaço disponível na célula que ele estiver. As propriedades `justify-items` e `align-items` aceitam os seguintes valores:
-- `start`:
-- `end`:
-- `center`:
-- `stretch`:
-
-#### `self`
-Possui o mesmo comportamento de `items`, mas o estilo é aplicado no próprio elemento e não no container. As propriedades `justify-self` e `align-self` aceitam os mesmos valores de `items`:
-- `start`:
-- `end`:
-- `center`:
-- `stretch`:
+![](preview.jpg)
